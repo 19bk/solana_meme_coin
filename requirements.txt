@@ -1,0 +1,5 @@
+python-dotenv
+ praw 
+ requests 
+ openai 
+cloudinary
