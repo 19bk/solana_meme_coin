@@ -155,7 +155,7 @@ class BlogPostGenerator:
         )
         try:
             response = openai.ChatCompletion.create(
-                model="gpt-4-1106-preview",  # Ensure this is the correct chat model
+                model="gpt-4-turbo-preview",  # Ensure this is the correct chat model
                 messages=[{"role": "system", "content": prompt}],
                 max_tokens=4096,
                 temperature=0.5,
