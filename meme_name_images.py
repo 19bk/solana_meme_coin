@@ -40,7 +40,7 @@ class MemeCoinNameAndImageGenerator:
             "Incorporate humor and creativity to make the meme coin concept engaging and relatable."
         )
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": prompt}
@@ -63,7 +63,7 @@ class MemeCoinNameAndImageGenerator:
             "Which meme coin name is the best choice for a successful launch? Please quote the selected name."
         )
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": prompt + "\n" + "\n".join([f"- {name}" for name in meme_coin_names])}
@@ -104,7 +104,7 @@ class MemeCoinNameAndImageGenerator:
             "Ensure it resonates well with the crypto community, inspiring excitement and a sense of belonging."
         )
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": prompt}
@@ -133,9 +133,6 @@ class MemeCoinNameAndImageGenerator:
             image_file.write(image_content)
         
         print(f"Image downloaded as {filename}")
-
-
-    
 
 
 def main():
